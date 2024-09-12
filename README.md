@@ -11,3 +11,15 @@ Example for creating ui/menu system with `raylib/raygui`.
 ## Getting Started
 
 Run `make` to compile and run the program. Tested on PLATFORM_DESKTOP + GNU/Linux + Wayland.
+
+## File Structure
+
+- `src/external/`: external library headers,
+- `src/coreRaylib.*`: raylib specific/boilerplate/init code,
+- `src/game.*`: game is the global app class that controls everything,
+- `src/main.c`: main app entry point,
+- `src/scene*.*`: Specific scene files,
+    - Exceptions:
+        - `src/scene.h`: enum for all the scenes for easy managing/switching between them,
+        - `src/sceneManager.*`: a manager for all of the game's scenes.
+- `src/settings.h`: global settings file.

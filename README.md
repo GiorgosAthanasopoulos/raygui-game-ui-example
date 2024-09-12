@@ -23,3 +23,10 @@ Run `make` to compile and run the program. Tested on PLATFORM_DESKTOP + GNU/Linu
         - `src/scene.h`: enum for all the scenes for easy managing/switching between them,
         - `src/sceneManager.*`: a manager for all of the game's scenes.
 - `src/settings.h`: global settings file.
+
+## TODO
+
+- [x] Main Scene
+- [ ] Settings Scene (50%)
+- [ ] Lobby Scene
+- [ ] In-Game UI

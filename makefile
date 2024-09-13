@@ -9,7 +9,7 @@ EXEC_NAME=Raygui
 EXEC=$(BIN_DIR)/$(EXEC_NAME)
 
 CC=g++
-CFLAGS=-Wall -Wextra -pedantic -std=c++11
+CFLAGS=-Wall -Wextra -pedantic -std=c++11 -g
 LDFLAGS=-lraylib -lm
 
 build:$(SRC)

@@ -2,15 +2,15 @@
 #include "settings.h"
 #include <raylib.h>
 
-bool Game::ShouldClose() { return WindowShouldClose(); }
+bool gameShouldClose() { return WindowShouldClose(); }
 
-void Game::Update() { sm.Update(); }
+void gameUpdate(Game &g) { g.sm.Update(); }
 
-void Game::Draw() {
+void gameDraw(Game &g) {
   BeginDrawing();
   ClearBackground(WIN_BG);
 
-  sm.Draw();
+  g.sm.Draw();
 
   EndDrawing();
 }

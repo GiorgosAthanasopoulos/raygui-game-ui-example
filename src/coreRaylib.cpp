@@ -7,9 +7,9 @@
 void initRaylib() {
   SetConfigFlags(WIN_FLAGS);
   InitWindow(WIN_W, WIN_H, WIN_TITLE);
-  SetWindowState(
-      FLAG_FULLSCREEN_MODE); // NOTE: not in WIN_FLAGS because of problem with
-                             // wayland fullscreen on init
+  if (WIN_FULLSCREEN) {
+    SetWindowState(FLAG_FULLSCREEN_MODE);
+  }
   SetTargetFPS(WIN_TARGET_FPS);
   SetExitKey(KEY_EXIT);
   SetWindowMinSize(WIN_MIN_W, WIN_MIN_H);

@@ -5,9 +5,9 @@ int main() {
   initRaylib();
   Game g;
 
-  while (!g.ShouldClose()) {
-    g.Update();
-    g.Draw();
+  while (!gameShouldClose()) {
+    gameUpdate(g);
+    gameDraw(g);
   }
 
   closeGame();

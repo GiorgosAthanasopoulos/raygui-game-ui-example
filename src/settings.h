@@ -11,6 +11,7 @@
 #define WIN_MIN_W 640
 #define WIN_MIN_H 480
 #define WIN_BG BLACK
+#define WIN_FULLSCREEN false
 
 // keybinds
 #define KEY_EXIT KEY_NULL
@@ -54,3 +55,11 @@
 #define SETTINGS_TITLE_FG RED
 #define SETTINGS_MUSIC_TEXT "Music Volume"
 #define SETTINGS_SOUND_TEXT "Sound Volume"
+#define SETTINGS_RES_TEXT "3840x2160;2560x1440;1920x1080;1280x720;640x480"
+#define SETTINGS_RES_COUNT 5
+#define SETTINGS_FULL_TEXT "Fullscreen"
+#define SETTINGS_RES_INITIAL_INDEX 3
+
+// lobby scene
+#define LOBBY_TITLE "Lobby"
+#define LOBBY_TITLE_FG RED

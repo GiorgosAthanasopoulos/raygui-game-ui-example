@@ -1,5 +1,6 @@
 #include "sceneManager.h"
 #include "scene.h"
+#include "sceneLobby.h"
 #include "sceneMain.h"
 #include "sceneSettings.h"
 #include "settings.h"
@@ -16,9 +17,10 @@ void SceneManager::Update() {
     updateMainScene(ms);
     break;
   case SETTINGS:
-    current = updateSettingsScene();
+    current = updateSettingsScene(ss);
     break;
   case LOBBY:
+    current = updateLobbyScene();
     break;
   }
 }
@@ -29,9 +31,10 @@ void SceneManager::Draw() {
     current = drawMainScene(ms);
     break;
   case SETTINGS:
-    drawSettingsScene(ss);
+    current = drawSettingsScene(ss);
     break;
   case LOBBY:
+    current = drawLobbyScene();
     break;
   }
 }

@@ -144,7 +144,7 @@ Scene drawSettingsScene(SettingsScene &ss) {
   Vector2 buttonSize = {w / 3 / 2, aspectYH / 2};
   {
     // back button
-    Vector2 pos = {10, y + buttonSize.y / 2};
+    Vector2 pos = {10, h - 10 - buttonSize.y};
     Rectangle bounds = {pos.x, pos.y, buttonSize.x, buttonSize.y};
 
     if (GuiButton(bounds, "BACK")) {
